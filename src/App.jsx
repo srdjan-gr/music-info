@@ -1,10 +1,10 @@
 import React from 'react'
-import {Button, useColorMode} from '@chakra-ui/react'
-import { MoonIcon, SunIcon } from '@chakra-ui/icons'
+import { useColorMode } from '@chakra-ui/react'
 
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from "react-router-dom";
 import MainLayout from './Layouts/MainLayout';
 import Home from './Pages/Home';
+
 
 // Router
 const router = createBrowserRouter(
@@ -20,11 +20,8 @@ const App = () => {
 
   const { colorMode, toggleColorMode } = useColorMode()
 
-
   return (
-   
     <RouterProvider router={router} />
-    
   )
 }
 

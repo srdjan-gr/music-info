@@ -8,7 +8,7 @@ const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode()
 
   return (
-    <Flex as='navbar' justifyContent='space-between' alignItems='center' mb='6' px={{sm: '4', md: '6', lg: '14' }} py='1'  borderBottom='1px' borderColor={colorMode === 'light' ? 'gray.200' : 'gray.700'}>
+    <Flex as='nav' justifyContent='space-between' alignItems='center' mb='6' px={{sm: '4', md: '6', lg: '14' }} py='1'  borderBottom='1px' borderColor={colorMode === 'light' ? 'gray.200' : 'gray.700'}>
 
       <Link to='/'><Text as='h1' fontSize='2xl' cursor='pointer'>M<Text as='span' color='teal'> -&gt; </Text>Info</Text></Link>
       
